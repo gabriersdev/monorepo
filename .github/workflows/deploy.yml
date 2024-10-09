@@ -29,13 +29,13 @@ jobs:
 
       # Build do site React
       - name: Build React site
-        run: npm run build:site
         working-directory: ./
-
+        run: npm run build:site
+        
       # Build da documentação VitePress
       - name: Build VitePress docs
-        run: npm run build:docs
         working-directory: ./
+        run: npm run build:docs
 
       # Deploy para o GitHub Pages
       - name: Deploy
@@ -43,6 +43,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Publica a raiz do repositório
+          publish_dir: ./packages
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
