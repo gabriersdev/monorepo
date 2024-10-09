@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gabriersdev.github.io/monorepo",
+  "homepage": "https://gabriersdev.github.io/monorepo/packages/site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
