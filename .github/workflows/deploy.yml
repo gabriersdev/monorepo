@@ -23,12 +23,12 @@ jobs:
 
       # Build do site React
       - name: Build React site
-        run: npm run build --workspace=packages/site
+        run: npm run build:site
         working-directory: ./packages/site
 
       # Build da documentação VitePress
       - name: Build VitePress docs
-        run: npm run build --workspace=packages/docs
+        run: npm run build:docs
         working-directory: ./packages/docs
 
       # Deploy para o GitHub Pages

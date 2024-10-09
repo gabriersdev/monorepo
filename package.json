@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:site": "npm run build --workspace=packages/site",
+    "build:docs": "npm run build --workspace=packages/docs"
   },
   "keywords": [],
   "author": "",
