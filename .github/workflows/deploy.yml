@@ -53,8 +53,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/docs/docs/.vitepress/dist  # Diretório do build do VitePress
+          publish_dir: ./packages/docs/.vitepress/dist  # Diretório do build do VitePress
           publish_branch: main  
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          
